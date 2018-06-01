@@ -8,8 +8,8 @@
 /*
  *  This sketch demonstrates how to set up a simple HTTP-like server.
  *  The server will set a GPIO pin depending on the request
- *    http://server_ip/gpio/0 will set the GPIO2 low,
- *    http://server_ip/gpio/1 will set the GPIO2 high
+ *    http://server_ip/gpio/0 will set the GPIO13 low,
+ *    http://server_ip/gpio/1 will set the GPIO13 high
  *  server_ip is the IP address of the ESP8266 module, will be 
  *  printed to Serial when the module is connected.
  */
@@ -94,9 +94,9 @@ void loop() {
   client.flush();
 
   // Prepare the response
-  String s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>\r\nGPIO is now ";
+  String s = "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n{\"pwm\":";
   s += String(val);
-  s += "</html>\n";
+  s += "}";
 
   // Send the response to the client
   client.print(s);
