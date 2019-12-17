@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nikita/light_controller/lightController/arduino/mock.h
+stdlib.h
+-
+stdbool.h
+-
+string.h
+-
+math.h
+-
+
+/home/nikita/light_controller/lightController/sensors.h
+
+/home/nikita/light_controller/lightController/toggle_sensor.cpp
+arduino/mock.h
+/home/nikita/light_controller/lightController/arduino/mock.h
+sensors.h
+/home/nikita/light_controller/lightController/sensors.h
+

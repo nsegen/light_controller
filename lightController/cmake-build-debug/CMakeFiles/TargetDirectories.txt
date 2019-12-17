@@ -1,0 +1,3 @@
+/home/nikita/light_controller/lightController/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/nikita/light_controller/lightController/cmake-build-debug/CMakeFiles/test.dir
+/home/nikita/light_controller/lightController/cmake-build-debug/CMakeFiles/edit_cache.dir
